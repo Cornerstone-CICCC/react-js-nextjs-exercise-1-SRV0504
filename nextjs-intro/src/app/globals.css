@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* ===== Base layer (global defaults) ===== */
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+
+  h1 {
+    @apply text-3xl font-bold;
+  }
+
+  p {
+    @apply text-gray-700 leading-relaxed;
+  }
+}
+
+/* ===== Components layer (opcional) ===== */
+@layer components {
+  .page-container {
+    @apply mx-auto max-w-4xl px-4 py-10;
+  }
+}
